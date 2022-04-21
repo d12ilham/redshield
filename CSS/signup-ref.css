@@ -245,12 +245,17 @@ input {
   }
   .signup-text-div h2 {
     margin-bottom: 30px;
+    font-size: 25px;
   }
   .signup-text-div p {
     text-align: center;
+    font-size: 16px;
   }
   .sp-signup-div {
     padding: 10px 20px;
+  }
+  .signup-text-div h5 {
+    font-size: 40px;
   }
 }
 
