@@ -237,4 +237,10 @@ input {
     top: 40px;
     right: 20px;
   }
+  .main-div p {
+    font-size: 16px;
+  }
+  .main-div ul li {
+    font-size: 16px;
+  }
 }
