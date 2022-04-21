@@ -33,7 +33,7 @@ select {
 }
 
 .main-section {
-  background: url("/assets/Token/003b_burn\ 1\ copy.png");
+  background-image: url("/assets/Token/003b_burncopy.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;
