@@ -19,6 +19,12 @@ span {
   color: #fff;
 }
 
+input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
 @font-face {
   font-family: "Lean Foreword";
   src: url("/assets/Lean\ Foreword.otf");
