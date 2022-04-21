@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedShield</title>
+    <link rel="stylesheet" href="CSS/token.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="main-section">
+      <div class="navigation-menu">
+        <a href="#" class="home-btn-link"
+          ><i
+            style="color: rgba(255, 255, 255, 0.7)"
+            class="material-icons home-btn"
+            >home</i
+          ></a
+        >
+        <a href="#" class="back-btn-link"
+          ><i
+            style="color: rgba(255, 255, 255, 0.7)"
+            class="material-icons back-btn"
+            >west</i
+          ></a
+        >
+      </div>
+      <div class="main-div">
+        <div class="signup-form-div">
+          <form class="signup-form" action="">
+            <div class="column-single form-column">
+              <label for="sp-email">*Email</label>
+              <input
+                type="email"
+                name="sp-email"
+                id="sp-email"
+                placeholder="Email Address"
+                required
+              />
+            </div>
+
+            <div class="column-double form-column">
+              <div class="column-2 column-double-1">
+                <label for="messaging-channel"
+                  >*Preferred Messaging Channel</label
+                >
+                <div class="select-div">
+                  <select
+                    name="messaging-channel"
+                    id="messaging-channel"
+                    required
+                  >
+                    <option value="discord">Discord</option>
+                    <option value="discord">Whatsapp</option>
+                  </select>
+                  <i
+                    style="color: rgba(255, 255, 255, 0.7)"
+                    class="material-icons down-arrow"
+                    >keyboard_arrow_down</i
+                  >
+                </div>
+              </div>
+              <div class="column-2 column-double-2 form-column">
+                <label for="user-id">*User ID</label>
+                <input
+                  type="text"
+                  name="user-id"
+                  id="user-id"
+                  placeholder="User ID / User name in your preferred messaging channel"
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form-text-colum">
+              <p class="form-text-1">Token Price: <span>0.18</span></p>
+              <p class="form-text-2">
+                Enjoy <span>15% extra tokens</span> for booking of 10K tokens &
+                above, <span>30% extra tokens</span> for booking of 50K tokens &
+                above.
+              </p>
+            </div>
+            <div class="column-single form-column">
+              <label for="purchase-amount"
+                >*Amount of RedShieldX Tokens you would like to book</label
+              >
+              <input
+                type="number"
+                name="purchase-amount"
+                id="purchase-amount"
+                placeholder="Minimum Purchase Amount is USD 1000"
+                required
+              />
+            </div>
+
+            <div class="column-single form-column">
+              <label for="referrer-id">Referrer ID</label>
+              <input
+                type="text"
+                name="referrer-id"
+                id="referrer-id"
+                placeholder="Specify Referrer ID to earn additional 100 RedShieldX Tokens"
+              />
+            </div>
+
+            <input type="button" value="Submit" id="sp-submit-btn" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <script src="Javascript/main.js"></script>
+  </body>
+</html>
