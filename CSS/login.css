@@ -28,11 +28,11 @@ input {
 
 @font-face {
   font-family: "Lean Foreword";
-  src: url("/assets/Lean\ Foreword.otf");
+  src: url("../assets/Lean\ Foreword.otf");
 }
 
 .main-section {
-  background: url("/assets/Login/loginbg.png");
+  background: url("../assets/Login/loginbg.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;

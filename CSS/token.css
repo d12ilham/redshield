@@ -29,11 +29,11 @@ select {
 
 @font-face {
   font-family: "Lean Foreword";
-  src: url("/assets/Lean\ Foreword.otf");
+  src: url("../assets/Lean\ Foreword.otf");
 }
 
 .main-section {
-  background-image: url("/assets/Token/003b_burncopy.png");
+  background-image: url("../assets/Token/003b_burncopy.png");
   background-repeat: no-repeat;
   background-position: left;
   background-size: cover;

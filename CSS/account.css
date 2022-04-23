@@ -30,11 +30,11 @@ input {
 
 @font-face {
   font-family: "Lean Foreword";
-  src: url("/assets/Lean\ Foreword.otf");
+  src: url("../assets/Lean\ Foreword.otf");
 }
 
 .main-section {
-  background: url("/assets/Account/003b_burn\ 1.png");
+  background: url("../assets/Account/003b_burn\ 1.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -187,7 +187,7 @@ input {
 
 .logout-btn::before {
   content: "";
-  background: url("/assets/Account/off.svg");
+  background: url("../assets/Account/off.svg");
   position: absolute;
   left: -40px;
   top: 50%;
