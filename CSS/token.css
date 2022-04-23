@@ -330,6 +330,9 @@ select {
   .column-double {
     flex-direction: column;
   }
+  #sp-submit-btn {
+    width: 320px;
+  }
 }
 
 @media (min-width: 1440px) {
