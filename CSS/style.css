@@ -26,6 +26,14 @@ input {
   appearance: none;
 }
 
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
 @font-face {
   font-family: "Lean Foreword";
   src: url("../assets/Lean\ Foreword.otf");
@@ -37,6 +45,7 @@ input {
   background-position: left;
   background-size: cover;
   position: relative;
+  overflow: hidden;
 }
 
 .main-section::after {
