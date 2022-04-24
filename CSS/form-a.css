@@ -1,0 +1,294 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a,
+input,
+button,
+label,
+span,
+select {
+  font-family: "raleway";
+  color: #fff;
+}
+
+input,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+input[data-autocompleted] {
+  background-color: transparent !important;
+}
+
+@font-face {
+  font-family: "Lean Foreword";
+  src: url("../assets/Lean\ Foreword.otf");
+}
+
+.main-section {
+  background-image: url("../assets/Token/003b_burncopy.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  position: relative;
+}
+
+.main-section::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* background: rgba(35, 27, 32, 0.8);
+  mix-blend-mode: multiply; */
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  z-index: 0;
+}
+
+.main-div {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 5%;
+  gap: 20px;
+  max-width: 1600px;
+  margin: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.main-inner-div {
+  background-color: #231b20;
+  padding: 30px 50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.88);
+  border-radius: 10px;
+  margin-top: 70px;
+}
+
+.inner-div {
+  width: 85%;
+  margin: auto;
+}
+
+.inner-div h5 {
+  color: #ffdf6b;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 45px;
+}
+
+.inner-div p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  font-style: italic;
+  line-height: 30px;
+}
+
+.inner-div p span {
+  color: #ff0000;
+}
+
+.concent-div {
+  width: 100%;
+  margin: 25px 0 10px 0;
+  padding: 25px 15px 0 15px;
+  border-top: 2px solid #383035;
+}
+
+.concent-div p {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 30px;
+  padding-bottom: 30px;
+}
+
+.concent-form {
+  text-align: center;
+}
+
+.concent-input-item {
+  display: inline;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 1.2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.concent-input-item input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  height: 30px;
+  width: 30px;
+  background-color: #383035 !important;
+  border: 1px solid #ff0000;
+  box-sizing: border-box;
+  box-shadow: inset 3px 3px 3px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.concent-input-item input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.concent-input-item .checkmark:after {
+  left: 11px;
+  top: 6px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.home-btn-link {
+  width: 50px;
+  position: absolute;
+  text-align: right;
+  z-index: 2;
+  top: 5%;
+  right: 5%;
+  max-width: 1600px;
+}
+
+.back-btn-link {
+  width: 50px;
+  position: absolute;
+  text-align: left;
+  z-index: 2;
+  top: 5%;
+  left: 5%;
+  max-width: 1600px;
+}
+
+.navigation-menu i {
+  font-size: 50px;
+  color: #fff !important;
+}
+
+.focus {
+  border: 2px solid #890606 !important;
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+}
+
+@media (max-width: 700px) {
+  .main-div {
+    padding: 25% 3%;
+  }
+
+  .signup-form {
+    width: 100%;
+  }
+
+  .navigation-menu a {
+    top: 15px;
+    right: 15px;
+  }
+  .main-inner-div {
+    margin-top: 0;
+    padding: 20px 10px;
+  }
+  .inner-div h5 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    line-height: 32px;
+  }
+  .inner-div h5 br {
+    display: none;
+  }
+  .inner-div {
+    width: 90%;
+  }
+
+  .inner-div p {
+    font-size: 16px;
+  }
+  .concent-div p {
+    font-size: 16px;
+  }
+  .concent-input-item {
+    font-size: 16px;
+  }
+  .checkmark {
+    top: -5px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 760px) {
+  .main-div {
+    padding: 15% 5%;
+  }
+  .signup-form {
+    width: 90%;
+  }
+  .inner-div h5 {
+    font-size: 30px;
+  }
+  .inner-div h5 br {
+    display: none;
+  }
+  .main-inner-div {
+    padding: 30px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-div {
+    padding: 0 15%;
+  }
+}
